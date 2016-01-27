@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/infos_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="@color/photo_hui"
+        android:elevation="10dp">
+        <Button
+            android:id="@+id/name_info_b"
+            android:text="姓名"
+            android:textSize="@dimen/title_text"
+            android:textColor="@color/white"
+            android:background="@color/touming"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_heigh" />
+        <ImageButton
+            android:id="@+id/edit_info_imb"
+            android:src="@drawable/icon_bianji"
+            android:scaleType="centerInside"
+            android:background="@color/touming"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/title_heigh"
+            android:layout_height="@dimen/title_heigh"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"/>
+        <ImageButton
+            android:id="@+id/favorite_info_imb"
+            android:scaleType="centerInside"
+            android:background="@color/touming"
+            android:layout_toLeftOf="@id/edit_info_imb"
+            android:layout_width="@dimen/title_heigh"
+            android:layout_height="@dimen/title_heigh"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"/>
+    </RelativeLayout>
+
+</FrameLayout>
